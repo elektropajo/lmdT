@@ -17,10 +17,12 @@
     "node-sass-middleware": "^0.9.6",
     "on-finished": "^2.3.0",
     "on-headers": "^1.0.1",
+    "sequelize": "^3.11.0",
     "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
     "browserify": "^11.2.0",
-    "gulp": "^3.9.0"
+    "gulp": "^3.9.0",
+    "sqlite3": "^3.1.0"
   }
 }
