@@ -4,6 +4,14 @@
     "claiming": "Desarrollo web para seres humanos",
     "description": "La máquina de Turing es un equipo de desarrolladores y creativos asentado en Valladolid abierto a todo tipo de proyectos de desarrollo web y diseño gráfico.",
   },
+  "menu": {
+    "title": "",
+    "links": [{
+      "text": "",
+      "url": "",
+      "title": ""
+    }]
+  }
   "articles": {
     "title": "",
     "text": "",

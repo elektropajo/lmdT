@@ -3,12 +3,10 @@ html(lang='es', dir='ltr')
   head
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    meta(name='description', content='La Máquina de Turing es un equipo de creativos asentado en Valladolid abierto a todo tipo de proyectos de desarrollo de páginas web y diseño gráfico.')
-    meta(name='abstract', content='La Máquina de Turing es un equipo de creativos asentado en Valladolid abierto a todo tipo de proyectos de desarrollo web y diseño gráfico. Trabajamos para ofrecer páginas web, trabajos en diseño e imagen y servicios en el ámbito del software que sean realmente útiles, que proporcionen autonomía a quienes se sirvan de ellas y garanticen su uso con libertad, sin cadenas contractuales ni barreras tecnológicas. Creemos, ante todo, que nuestro trabajo debe ser ético.')
-    meta(name='generator' content="Express")
+    meta(name='description', content='#{description}')
+    meta(name='author', content='La máquina de Turing')
+    meta(name='robots', content='index, follow')
     title= 'Desarrollo web y diseño gráfico La máquina de Turing'
-    link(rel='canonical', href='http://www.lamaquinadeturing.com/')
-    link(rel='shortlink', href='http://www.lamaquinadeturing.com/')
     link(rel='icon', href='/images/favicon.png', type='image/png')
     link(rel='stylesheet', href='/stylesheets/style.css')
     script(src='/javascripts/script.js')
@@ -17,4 +15,22 @@ html(lang='es', dir='ltr')
     <![endif]-->
       
   body
-    block content
+    #l-top
+      header
+        a(href='/')
+          img(alt='Isologo de La Máquina de Turing')
+        h1
+          a(href='/') #{sitename}
+        p #{claiming}
+      nav
+        h2 Menú principal
+        ul
+          li: a Servicios
+          li: a Portafolio
+          li: a Blog
+          li: a(href='/#contacto') Contacto
+    #-l-content
+      block content
+    #l-footer
+    footer
+      

@@ -17,7 +17,8 @@ sequelize.sync().then(function() {
     if ( count === 0) {
       Home.create({
         sitename: 'La máquina de Turing',
-        claiming: 'Desarrollo web para seres humanos.'
+        claiming: 'Desarrollo web para seres humanos.',
+        description: 'La máquina de Turing es un equipo de desarrolladores y creativos asentado en Valladolid abierto a todo tipo de proyectos de desarrollo web y diseño gráfico.'
       }).then(function() {
         console.log('Base de datos inicializada');
       })

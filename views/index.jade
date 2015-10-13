@@ -1,5 +1,31 @@
 extends layout
 
 block content
-  h1 #{sitename}
-  p #{claiming}
+  section
+    h2 Servicios
+  section
+    h2 Descripción
+    p #{description}
+  section
+    h2 Trabajos
+  section
+    h2 Blog
+  section
+    h2 Nosotros
+  section#contacto
+    h2 Contacto
+    form(action='contacto', method='post')
+      label Nombre
+      input(type='text', required)
+      label Email
+      input(type='email', required)
+      label Teléfono
+      input(type='text', pattern='^(?:6|?:7|?:9|\(\+34))(?:\d){8}$')
+      label Asunto
+      input(type='text', required)
+      label Mensaje
+      textarea(required)
+      label Captcha
+      input(type='number', required)
+      input(type='submit', value='Enviar')
+      
